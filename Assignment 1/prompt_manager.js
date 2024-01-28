@@ -28,6 +28,8 @@ class PromptsManager {
       this.interactions.push(p);
     }
 
+
+    //you may change a existing interaction with a new one by specifiying the type and the index of the position you want to change
     change_prompt(type, number, question, response, timestamp = "", imageurl = ""){
       if (number > this.interactions.length - 1){
         console.log("undefined prompt index");
