@@ -28,6 +28,9 @@ class PromptsManager {
       this.interactions.push(p);
     }
 
+    recordPrompt(number){
+      this.interactions.splice(number, 1);
+    }
 
     //you may change a existing interaction with a new one by specifiying the type and the index of the position you want to change
     change_prompt(type, number, question, response, timestamp = "", imageurl = ""){
