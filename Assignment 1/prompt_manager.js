@@ -23,7 +23,7 @@ class PromptsManager {
         this.interactions.push(p);
     }
 
-    record_dallePrompt(prompt, response, timestamp){
+    record_dallePrompt(prompt, response, imageurl){
       const p = new dalle_interaction(prompt, response, imageurl);
       this.interactions.push(p);
     }
