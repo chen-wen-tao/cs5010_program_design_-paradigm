@@ -28,7 +28,7 @@ class PromptsManager {
       this.interactions.push(p);
     }
 
-    recordPrompt(number){
+    removePrompt(number){
       this.interactions.splice(number, 1);
     }
 
